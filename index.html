@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="caixa">
+        <img src="front.png" alt="foto do game">
+        <h1>O que você encontra aqui. </h1>
+
+        <p>Obtenha o seu próprio site personalizado de formulário de usuário hoje mesmo e simplifique a coleta de dados de maneira eficiente. Nosso serviço oferece a solução perfeita para criar formulários interativos e intuitivos que se adequam às suas
+            necessidades. Com uma interface amigável e de fácil utilização, você pode projetar formulários personalizados com campos personalizados, validações avançadas e até mesmo recursos de lógica condicional. Além disso, você terá acesso a análises
+            e relatórios detalhados para acompanhar o desempenho dos seus formulários. Não perca mais tempo com processos manuais e garanta uma coleta de dados rápida, precisa e segura com o nosso site de formulário de usuário. Entre em contato conosco
+            hoje mesmo e descubra como podemos impulsionar a eficiência do seu negócio!</p>
+        <p></p>
+
+        <button onclick="abrir()">Entrar em contato</button>
+    </div>
+
+    <form action="https://formsubmit.co/brunoelf@gmail.com" method="POST">
+        <input type="text" name="nome" required placeholder="Nome">
+        <input type="email" name="email" required placeholder="E-Mail">
+        <input type="whatsapp" name="whatsapp" required placeholder="(xx)xxxx-xxxx">
+        <textarea type="text" name="ticket" placeholder="Sua dúvida aqui "></textarea>
+        <button type="submit ">Enviar</button>
+        <button onclick="fechar() " type="button " class="voltar ">Voltar</button>
+    </form>
+</body>
+
+<script>
+    function abrir() {
+        document.querySelector("form ").style.opacity = 1
+        document.querySelector("div ").style.opacity = 0.2
+
+    }
+
+    function fechar() {
+        document.querySelector("form ").style.opacity = 0
+        document.querySelector("div ").style.opacity = 1
+    }
+</script>
+
+</html>
